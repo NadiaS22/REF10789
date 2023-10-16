@@ -3,9 +3,9 @@ using namespace std;
 
 int main() {
 
-    float nota1, nota2, nota3, nota4, media;
+    float nota1, nota2, nota3, nota4, media, media50, media102, media103, media30;
 
-    cout << "Indique-me 4 notas.\n";
+    cout << "Indique-me 4 notas!\n\n";
     cout << "Primeira nota:";
     cin >> nota1;
     cout << "Segunda nota:";
@@ -16,8 +16,16 @@ int main() {
     cin >> nota4;
     
     media = (nota1 + nota2 + nota3 + nota4) / 4;
+    media50 = (nota1) * 0.50;
+    media102 = (nota2) * 0.10;
+    media103 = (nota3) * 0.10;
+    media30 = (nota4) * 0.30;
     
-    cout << "As notas indicadas foram " << nota1 << "," << nota2 << "," << nota3 << "," << nota4 << ", cuja média é " << media << endl;
+    cout << "\n\nAs notas indicadas foram " << nota1 << ", " << nota2 << ", " << nota3 << ", " << nota4 << ", cuja média é " << media << "." << endl;
+    cout << "\n\n50% da primeira nota: " << media50 << endl;
+	cout << "10% da segunda nota: " << media102 << endl;
+	cout << "10% da terceira nota: " << media103 << endl;
+	cout << "30% da quarta nota: " << media103 << endl;
 
     return 0;
 }
